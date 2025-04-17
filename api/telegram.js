@@ -3,8 +3,8 @@
 export default async function handler(req, res) {
     const { feedback_text } = req.body;
   
-    const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-    const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+    const TELEGRAM_BOT_TOKEN ="7771121175:AAF0awDm7EnQcR2Z9uBNQO9zW92idDkleqg" ;
+    const TELEGRAM_CHAT_ID = "1178375648";
   
     if (!feedback_text) {
       return res.status(400).json({ error: 'Missing feedback_text' });
